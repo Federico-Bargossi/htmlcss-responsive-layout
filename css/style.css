@@ -2,12 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Helvetica Neue', sans-serif ;
 }
 
 img{
     width: 100%;
 }
 
+
+/* HEADER */
 .header{
     height: 70px;
     display: flex;
@@ -15,8 +18,13 @@ img{
     justify-content: center;
 }
 
+
+
+/* MAIN */
 .title{
     color: hsl(33.45deg 100% 53.92%);
+    font-family: 'Nerko One', cursive;
+    font-weight: bold ;
 }
 
 .main{
@@ -24,9 +32,8 @@ img{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 
-    height: 1000px;
+    height: 1500px;
 }
 
 .container{
@@ -83,6 +90,77 @@ img{
     gap: 20px;
 }
 
+
+/* FOOTER MAIN */
+
+.cont-social{
+    width: 100%;
+    margin: 3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bott{
+    background-color: white;
+    height: 50px;
+    border-radius: 20px;
+    width: 50px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    
+}
+
+.nascosto2{
+    display: none;
+}
+
+.fa-facebook{
+    color: blue;
+}
+
+.fa-twitter{
+    color: lightblue;
+}
+
+.fa-instagram{
+    color: hsl(346.27deg 72.84% 68.24%);
+}
+
+.fa-pinterest, .fa-youtube{
+    color: red;
+}
+
+/* PRESENTATION */
+
+hr{
+    width: 100px;
+    margin-bottom: 1.6rem;
+}
+
+.banner-img{
+    margin-bottom: 30px;
+    display: none;
+}
+
+.title-presentation{
+    padding-bottom: 20px;
+}
+
+.img-cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 60px;
+    margin-bottom: 20px;
+}
+
+.paragrafo{
+    font-size: 1.3rem;
+    line-height: 35px;
+}
+
 /* ********** */
 /* MEDIA QUERY */
 @media screen and (min-width: 768px){
@@ -99,6 +177,22 @@ img{
         flex-direction: row;
         justify-content: flex-start;
         flex-wrap: wrap;
+    }
+
+    .bott{
+        width: 130px;
+    }
+
+    .banner-img{
+        display: inline;
+    }
+
+    .img-cont{
+        justify-content: flex-start;
+        float: left;
+        width: 50%;
+        padding: 0 10px;
+        margin-bottom: 0px;
     }
 }
 
@@ -118,4 +212,11 @@ img{
         width: 30%;
     }
 
+    .nascosto2{
+        display: inline-block;
+    }
+
+    .img-cont{
+        width: 40%;
+    }
 }
